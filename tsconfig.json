@@ -22,7 +22,17 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@ng-movies/core": ["src/app/core/index.ts"],
+      "@ng-movies/shared": ["src/app/shared/index.ts"],
+      "@ng-movies/pages": ["src/app/pages/index.ts"],
+      "@ng-movies/layouts": ["src/app/layouts/index.ts"],
+      "@ng-movies/core/*": ["src/app/core/*/index.ts"],
+      "@ng-movies/shared/*": ["src/app/shared/*/index.ts"],
+      "@ng-movies/pages/*": ["src/app/pages/*/index.ts"],
+      "@ng-movies/layouts/*": ["src/app/layouts/*/index.ts"],
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
